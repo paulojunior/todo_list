@@ -108,8 +108,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Task" id="19h-01-Vcr">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="CUZ-wN-j8G"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="bvl-yN-9VC"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="bvl-yN-9VC">
+                            <connections>
+                                <action selector="save" destination="Vtv-7F-KIp" id="5fd-1v-mzP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="prioritySegmentedControl" destination="jwB-w1-dkk" id="fTq-hc-0r4"/>
+                        <outlet property="taskTitleTextField" destination="Pgm-2L-OZR" id="zNe-Lc-SeT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Khu-zb-JSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

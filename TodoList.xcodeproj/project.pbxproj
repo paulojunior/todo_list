@@ -14,6 +14,7 @@
 		2E7E48A526CD8B2600BE5B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E7E48A326CD8B2600BE5B27 /* LaunchScreen.storyboard */; };
 		2E7E48AE26CD8BA700BE5B27 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E48AD26CD8BA700BE5B27 /* TaskListViewController.swift */; };
 		2E7E48B026CD92D800BE5B27 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E48AF26CD92D800BE5B27 /* AddTaskViewController.swift */; };
+		2E7E48B326CD956800BE5B27 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7E48B226CD956800BE5B27 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2E7E48A626CD8B2600BE5B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7E48AD26CD8BA700BE5B27 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		2E7E48AF26CD92D800BE5B27 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		2E7E48B226CD956800BE5B27 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		2E7E489726CD8B2400BE5B27 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				2E7E48B126CD955D00BE5B27 /* Models */,
 				2E7E48AC26CD8B9900BE5B27 /* Controllers */,
 				2E7E489826CD8B2400BE5B27 /* AppDelegate.swift */,
 				2E7E489A26CD8B2400BE5B27 /* SceneDelegate.swift */,
@@ -76,6 +79,14 @@
 				2E7E48AF26CD92D800BE5B27 /* AddTaskViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E7E48B126CD955D00BE5B27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2E7E48B226CD956800BE5B27 /* Task.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				2E7E489926CD8B2400BE5B27 /* AppDelegate.swift in Sources */,
 				2E7E48B026CD92D800BE5B27 /* AddTaskViewController.swift in Sources */,
+				2E7E48B326CD956800BE5B27 /* Task.swift in Sources */,
 				2E7E489B26CD8B2400BE5B27 /* SceneDelegate.swift in Sources */,
 				2E7E48AE26CD8BA700BE5B27 /* TaskListViewController.swift in Sources */,
 			);
