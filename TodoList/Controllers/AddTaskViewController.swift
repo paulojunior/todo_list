@@ -11,6 +11,12 @@ import RxSwift
 
 class AddTaskViewController: UIViewController {
     
+    private let taskSubject = PublishSubject<Task>()
+    
+    var taskSubjectObservable: Observable<Task> {
+        return taskSubject.asObserver()
+    }
+    
     @IBOutlet weak var prioritySegmentedControl: UISegmentedControl!
     @IBOutlet weak var taskTitleTextField: UITextField!
     
@@ -22,5 +28,8 @@ class AddTaskViewController: UIViewController {
         }
         
         let task = Task(title: title, priority: priority)
+        taskSubject.onNext(task)
+        
+        self.dismiss(animated: true, completion: nil)
     }
 }
