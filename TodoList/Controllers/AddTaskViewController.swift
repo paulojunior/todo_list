@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import RxSwift
 
 class AddTaskViewController: UIViewController {
     
@@ -22,5 +23,4 @@ class AddTaskViewController: UIViewController {
         
         let task = Task(title: title, priority: priority)
     }
-    
 }
