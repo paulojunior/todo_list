@@ -14,6 +14,8 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet weak var prioritySegmentedControl: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
+    private var tasks = Variable<[Task]>([])
+    
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -45,7 +47,7 @@ class TaskListViewController: UIViewController, UITableViewDelegate, UITableView
         
         addTVC.taskSubjectObservable
             .subscribe(onNext: { task in
-                print(task)
+                self.tasks.value.append(task)
             }).disposed(by: disposeBag)
     }
 }
